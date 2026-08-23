@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raju Bhai (2018)</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    min-height:100vh;
+    background:
+        linear-gradient(
+            180deg,
+            #00efd2 0%,
+            #00c9ad 38%,
+            #1d655a 100%
+        );
+    color:white;
+}
+
+.container{
+    width:100%;
+    max-width:600px;
+    margin:auto;
+    padding:55px 24px 35px;
+}
+
+/* MAIN CARD */
+.card{
+    background:linear-gradient(
+        145deg,
+        #005348,
+        #003b32
+    );
+
+    border-radius:16px;
+    padding:38px 20px 32px;
+
+    text-align:center;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.25);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/* PROFILE */
+.profile{
+    width:180px;
+    height:180px;
+
+    margin:0 auto 30px;
+
+    padding:5px;
+
+    border-radius:50%;
+
+    border:3px solid #ffd900;
+
+    box-shadow:
+        0 0 12px #ffd900,
+        0 0 35px rgba(255,220,0,.65);
+
+    background:#064c42;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+}
+
+/* TITLE */
+h1{
+    font-size:40px;
+    line-height:1.1;
+    font-weight:800;
+
+    margin-bottom:9px;
+}
+
+.subtitle{
+    font-size:21px;
+    margin-bottom:9px;
+}
+
+/* YELLOW LABEL */
+.approved{
+    display:inline-block;
+
+    background:#fff000;
+    color:#111;
+
+    padding:4px 10px;
+
+    border-radius:9px;
+
+    font-size:21px;
+
+    margin-bottom:14px;
+}
+
+/* COUNTDOWN */
+.countdown{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+#timer{
+    color:#00f28b;
+    font-size:38px;
+    font-weight:bold;
+}
+
+/* FEATURES */
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:5px;
+}
+
+.feature{
+    text-align:center;
+}
+
+.icon{
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:40px;
+    font-weight:normal;
+}
+
+.feature p{
+    font-size:17px;
+    color:#ddd;
+    margin-top:6px;
+}
+
+/* TELEGRAM BUTTON */
+.telegram-btn{
+    display:block;
+
+    width:100%;
+
+    margin-top:14px;
+
+    padding:25px 8px;
+
+    background:#e51b23;
+
+    color:white;
+
+    text-align:center;
+    text-decoration:none;
+
+    border:3px solid white;
+    border-radius:15px;
+
+    font-family:Georgia,serif;
+
+    font-size:27px;
+    font-weight:bold;
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,.25);
+
+    transition:.2s;
+}
+
+.telegram-btn:hover{
+    transform:translateY(-3px);
+    background:#f32930;
+}
+
+.telegram-btn:active{
+    transform:scale(.98);
+}
+
+/* DISCLAIMER */
+.disclaimer{
+    margin-top:24px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.55);
+
+    font-size:17px;
+
+    line-height:1.45;
+}
+
+.credit{
+    margin-top:5px;
+}
+
+/* MOBILE */
+@media(max-width:450px){
+
+    .container{
+        padding:55px 24px 30px;
+    }
+
+    .card{
+        padding:36px 14px 30px;
+    }
+
+    .profile{
+        width:180px;
+        height:180px;
+    }
+
+    h1{
+        font-size:36px;
+    }
+
+    .subtitle{
+        font-size:20px;
+    }
+
+    .approved{
+        font-size:19px;
+    }
+
+    .countdown{
+        font-size:21px;
+    }
+
+    .feature p{
+        font-size:16px;
+    }
+
+    .telegram-btn{
+        font-size:24px;
+        padding:24px 5px;
+    }
+
+    .disclaimer{
+        font-size:16px;
+    }
+}
+
+/* SMALL PHONE */
+@media(max-width:370px){
+
+    .container{
+        padding-left:14px;
+        padding-right:14px;
+    }
+
+    .profile{
+        width:155px;
+        height:155px;
+    }
+
+    h1{
+        font-size:31px;
+    }
+
+    .subtitle{
+        font-size:17px;
+    }
+
+    .approved{
+        font-size:16px;
+    }
+
+    .telegram-btn{
+        font-size:21px;
+    }
+
+    .feature p{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- MAIN CARD -->
+    <div class="card">
+
+        <!-- PROFILE IMAGE -->
+        <div class="profile">
+            <img
+                src="profile.jpg"
+                alt="Raju Bhai"
+            >
+        </div>
+
+
+        <!-- TITLE -->
+        <h1>Raju Bhai (2018)</h1>
+
+        <div class="subtitle">
+            Toss • Match • Session • Predictions
+        </div>
+
+
+        <!-- APPROVED -->
+        <div class="approved">
+            Telegram Approved and Trusted Channel
+        </div>
+
+
+        <!-- COUNTDOWN -->
+        <div class="countdown">
+            Free Joining End in
+            <span id="timer">30</span>s
+        </div>
+
+
+        <!-- FEATURES -->
+        <div class="features">
+
+            <div class="feature">
+                <div class="icon">✓</div>
+                <p>Verified</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">♙</div>
+                <p>Secure</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">↗</div>
+                <p>Popular</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">☆</div>
+                <p>Top Rated</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TELEGRAM BUTTON -->
+    <a
+        class="telegram-btn"
+        href="https://t.me/+Ptx9ZeofGk02N2U1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        🚀 Join Free Telegram Channel
+    </a>
+
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+
+        Disclaimer: This channel shares cricket updates,
+        analysis, and general information for fans.
+        It does not promote betting or gambling.
+        No outcomes are guaranteed.
+        Please verify information independently
+        and act responsibly.
+
+        <div class="credit">
+            Professional Cricket Analysis
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* COUNTDOWN */
+
+let timeLeft = 30;
+
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(function(){
+
+    timeLeft--;
+
+    timer.textContent = timeLeft;
+
+    if(timeLeft <= 0){
+
+        clearInterval(countdown);
+
+        timer.textContent = "0";
+
+    }
+
+},1000);
+
+</script>
+
+</body>
+</html>
